@@ -11,6 +11,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<modules>
+	    <module>modapi</module>
 	    <module>mod01</module>
 	    <module>mod02</module>
 	    <module>modwebapp</module>

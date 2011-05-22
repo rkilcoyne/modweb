@@ -5,6 +5,13 @@
   <groupId>com.entermobile.example</groupId>
   <artifactId>mod02</artifactId>
   <version>1.0.0-SNAPSHOT</version>
+  <dependencies>
+    <dependency>
+      <groupId>com.entermobile.example</groupId>
+      <artifactId>modapi</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
   <repositories>
     <repository>
       <id>JBOSS_NEXUS</id>
