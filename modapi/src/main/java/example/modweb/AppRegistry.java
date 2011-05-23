@@ -1,7 +1,9 @@
 package example.modweb;
 
 import example.modweb.api.ModuleProvider;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import javax.annotation.PostConstruct;
 import javax.ejb.Singleton;
@@ -17,16 +19,15 @@ public class AppRegistry {
 
     private Map<String, ModuleProvider> modules = new HashMap<String, ModuleProvider>();
     
-    @Inject
-    private Instance<ModuleProvider> moduleProviders;
-
-    public AppRegistry() {
-        System.out.println("Contruct AppRegistry: " + this);
+    @PostConstruct @Inject 
+    public void postConstruct(Instance<ModuleProvider> moduleProviders) {
+        for (ModuleProvider provider: moduleProviders) {
+            modules.put(provider.getId(), provider);
+        }
     }
-            
-    @PostConstruct
-    public void postConstruct() {
-        System.out.println("moduleProviders: " + moduleProviders);
+    
+    public List<ModuleProvider> getModules() {
+        return new ArrayList<ModuleProvider>(modules.values());
     }
     
 }	

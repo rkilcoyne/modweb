@@ -7,23 +7,17 @@
     <version>1.0.0-SNAPSHOT</version>
     <dependencies>
         <dependency>
-            <groupId>com.entermobile.example</groupId>
-            <artifactId>modapi</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
             <version>6.0</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.entermobile.example</groupId>
+            <artifactId>modapi</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
-    <repositories>
-        <repository>
-            <id>JBOSS_NEXUS</id>
-            <url>http://repository.jboss.org/nexus/content/groups/public</url>
-        </repository>
-    </repositories>
     <build>
         <finalName>mod01</finalName>
         <plugins>

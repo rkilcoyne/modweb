@@ -1,28 +1,27 @@
-package example.modweb.mod01;
+package example.modweb.mod02;
 
 import example.modweb.api.ModuleProvider;
 
-
-public class Mod01Module implements ModuleProvider {
+public class Mod02Module implements ModuleProvider {
 
     @Override
     public String getName() {
-        return "Module 01";
+        return "Module 02";
     }
 
     @Override
     public String getId() {
-        return "example.modweb.mod01";
+        return "example.modweb.mod02";
     }
 
     @Override
     public String getDescription() {
-        return "Module 01 provides functionality A.";
+        return "Module 02 provides functionality B.";
     }
 
     @Override
     public String getDefaultAction() {
-        return "/mod01.jsf";
+        return "/mod02.jsf";
     }
     
 }
