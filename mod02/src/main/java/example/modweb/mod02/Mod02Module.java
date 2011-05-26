@@ -1,7 +1,9 @@
 package example.modweb.mod02;
 
 import example.modweb.api.ModuleProvider;
+import javax.enterprise.context.ApplicationScoped;
 
+@ApplicationScoped
 public class Mod02Module implements ModuleProvider {
 
     @Override
