@@ -5,6 +5,7 @@
     <groupId>com.entermobile.example</groupId>
     <artifactId>mod01</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
@@ -18,6 +19,7 @@
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
     <build>
         <finalName>mod01</finalName>
         <plugins>
